@@ -22,16 +22,13 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors
 
-* **Pink Room** [PinkRoom](https://github.com/pink-room)
+* **Simão Nogueira** - *Most of the work* - [simaonogueira101](https://github.com/simaonogueira101)
+* **Mário Gago** - *First implementation* - [mgago](https://github.com/mgago)
+* **Bruno Correia** - *Motivational support* - [bffcorreia](https://github.com/bffcorreia)
+* **Karl Smith** - *Initial wireframes*
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/pink-room/short-stories-landing) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc

@@ -69,6 +69,10 @@ textarea {
   margin: 0;
 }
 
+textarea {
+  resize: none !important;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

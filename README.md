@@ -8,7 +8,7 @@ After downloading, simply edit the HTML and CSS files included with the template
 
 ### Installing
 
-Clone the repo
+Clone the repo with `git clone https://github.com/pink-room/short-stories-landing.git`
 
 ## Built With
 

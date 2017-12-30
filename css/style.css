@@ -1,0 +1,11 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  --green-forest: #4BCA7E;
+  --off-white: #FAFAFA;
+  --off-black: #212121;
+  --sweet-grey: #BDBDBD;
+}
+
+.slab {
+  font-family: 'Roboto Slab', serif;
+}

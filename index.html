@@ -2,14 +2,93 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>5Min Reader</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bulma.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,400,900" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
-    hello world
-
+    <section class="hero-section">
+      <div class="hero-overlay">
+        <div class="content">
+          <img src="images/logo-dark.svg" alt="Dark Logo" class="dark-logo">
+          <h2 class="subtitle is-3 thin sans">Discover, authors and stories in a few minutes every day.</h2>
+          <h2 class="title is-3 bold">Be one of the first to try it out.</h2>
+          <br>
+          <a href="https://play.google.com/store" target="_blank">
+            <img src="images/phone-top.svg" alt="Phone Top" class="phone phone-top">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="large-section about-section-large">
+      <section class="about-section">
+        <div class="content" id="about">
+          <h3 class="title is-2 bold green">About</h3>
+          <p class="subtitle is-4 white thin">
+            Remember the good ol’ days when you’d sit down and read? I mean read
+            for the joy of it - not work stuff, and not the menagerie you easily
+            get lost in while killing time on social media.
+          </p>
+          <p class="subtitle is-4 white thin">
+            Ahh, to just get lost in a story just for the sheer love of it and
+            discover new stories, new authors and new worlds.
+          </p>
+        </div>
+      </section>
+      <section class="bottom-about-section">
+        <div class="section-left">
+          <div class="section-left-overlay">
+            <img src="images/phone-mockup.svg" class="phone" alt="">
+          </div>
+        </div>
+        <div class="section-right">
+          <div class="content">
+            <p class="subtitle is-4 white thin" id="phone-trigger">
+              <span class="green">5 Minute Reader</span> is the easiest way to pick up your reading habit again.
+              Got a few minutes before meeting a friend? Put away the cat videos and
+              read a short story. Don’t worry about the dopamene hit and stop checking
+              out your likes.
+            </p>
+            <p class="subtitle is-4 white thin">
+              Get the reader’s high with one of our short short stories - and with
+              a regularly updated range of genres and authors there’s something for
+              everyone. Download 5 Minute Reader today!
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="small-section mailing-section">
+      <h2 class="title is-2 bold white">Sounds cool?</h2>
+      <h3 class="subtitle is-4 thin white">Get to know us even better!</h3>
+      <form>
+        <div class="inputs">
+          <input class="input" type="text" placeholder="Email">
+        </div>
+        <a class="button is-dark">Submit</a>
+      </form>
+    </section>
+    <section class="small-section feedback-section">
+      <h2 class="title is-2 bold">Author? Feedback</h2>
+      <h3 class="subtitle is-4 thin">Really? Let’s get in touch!</h3>
+      <form>
+        <div class="inputs">
+          <input class="input" type="text" placeholder="Name">
+          <input class="input" type="text" placeholder="Email">
+          <textarea class="textarea" type="text" placeholder="Message"></textarea>
+        </div>
+        <a class="button is-dark">Submit</a>
+      </form>
+    </section>
+    <footer class="small-section">
+      <img src="images/phone-bottom.svg" class="phone phone-bottom" alt="">
+      <img src="images/logo-light.svg" alt="">
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -6,6 +6,13 @@
   --sweet-grey: #BDBDBD;
 }
 
+.green {
+  color: var(--green-forest) !important;
+}
+.white {
+  color: var(--off-white) !important;
+}
+
 .sans {
   font-family: 'Roboto', sans-serif;
   line-height: 95% !important;
@@ -31,7 +38,6 @@ section {
 }
 
 .large-section {
-  min-height: 190vh;
 }
 
 .hero-section {
@@ -66,8 +72,17 @@ section {
   margin-bottom: 32px;
 }
 
+.phone {
+  max-width: 350px;
+}
+
 .phone-top {
-  width: 70%
+  position: relative;
+  bottom: -15px;
+  transition: bottom 0.5s;
+}
+.phone-top:hover {
+  bottom: -6px;
 }
 
 .about-section-large {
@@ -75,6 +90,70 @@ section {
 }
 .about-section {
   background-image: url("../images/lady-dark.jpg");
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 96px;
+  padding-right: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0px -24px 100px 0px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 10;
+}
+.about-section .content {
+  max-width: 550px;
+  position: relative;
+  left: -32px;
+  opacity: 0;
+  transition: all 1s;
+}
+.about-section .content.active {
+  max-width: 550px;
+  left: 0;
+  opacity: 1;
+}
+.bottom-about-section {
+  position: relative;
+  z-index: 20;
+  background: var(--off-black);
+  display: flex;
+  flex-direction: row;
+  min-height: 0px;
+  padding-bottom: 96px;
+}
+.bottom-about-section .content {
+  max-width: 550px;
+}
+.section-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.section-left-overlay {
+  position: absolute;
+  left: calc(100% / 2 - 175px);
+  top: 50vh;
+  transition: top 2s;
+}
+.section-left-overlay.active{
+  top: 64px;
+}
+.section-right {
+  padding-top: 32px;
+  padding-right: 96px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  right: -32px;
+  opacity: 0;
+  transition: all 1s;
+}
+.section-right.active {
+  max-width: 550px;
+  right: 0;
+  opacity: 1;
 }

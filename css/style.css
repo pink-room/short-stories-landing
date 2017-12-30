@@ -40,6 +40,14 @@ section {
 .large-section {
 }
 
+.small-section {
+  min-height: 0px !important;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: 96px;
+  padding-right: 96px;
+}
+
 .hero-section {
   position: relative;
 }
@@ -153,7 +161,31 @@ section {
   transition: all 1s;
 }
 .section-right.active {
-  max-width: 550px;
   right: 0;
   opacity: 1;
+}
+
+.mailing-section {
+  position: relative;
+  z-index: 30;
+  background: var(--green-forest);
+}
+.feedback-section {
+  position: relative;
+  z-index: 30;
+  background: var(--off-white);
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+}
+form .inputs {
+  width: 500px;
+  max-width: 500px;
+  margin-right: 24px;
+}
+
+.inputs * {
+  margin-bottom: 12px;
 }

@@ -10,10 +10,6 @@ After downloading, simply edit the HTML and CSS files included with the template
 
 Clone the repo
 
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 * [Bulma](https://bulma.io/) - A free and open source CSS framework based on Flexbox

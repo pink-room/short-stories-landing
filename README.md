@@ -27,7 +27,7 @@ Add additional notes about how to deploy this on a live system
 * **Bruno Correia** - *Motivational support* - [bffcorreia](https://github.com/bffcorreia)
 * **Karl Smith** - *Initial wireframes*
 
-See also the list of [contributors](https://github.com/pink-room/short-stories-landing) who participated in this project.
+See also the list of [contributors](https://github.com/pink-room/short-stories-landing/contributors) who participated in this project.
 
 ## License
 

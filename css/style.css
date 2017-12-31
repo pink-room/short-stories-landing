@@ -230,9 +230,53 @@ footer {
 	position: absolute;
 	top: 0;
 	left: 0;
+  overflow: hidden;
 }
 
 .layer {
 	position: absolute;
 	display: block;
+}
+
+#mce-responses {
+  position: fixed;
+  left: 24px;
+  margin-right: 24px;
+  bottom: 0;
+  z-index: 500;
+}
+
+.response {
+  color: var(--off-white);
+  cursor: pointer;
+}
+
+.notification:not(:last-child) {
+  margin-bottom: 0 !important;
+}
+
+#mce-error-response:empty {
+  display: none !important;
+}
+#mce-success-response:empty {
+  display: none !important;
+}
+
+.hidden {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+
+.notification-x {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 24px;
+  top: 0;
+  color: var(--off-white);
+  pointer-events: none;
 }

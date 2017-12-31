@@ -4,7 +4,7 @@ var about = $('#about').offset().top;
 
 $( window ).scroll(function() {
   var view = $(window).scrollTop() + $(window).height();
-  console.log(view);
+  //console.log(view);
 
   if(view > scroll) {
     $(".section-left-overlay").addClass("active");

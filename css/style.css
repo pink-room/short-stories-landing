@@ -44,8 +44,18 @@ section {
   min-height: 0px !important;
   padding-top: 64px;
   padding-bottom: 64px;
-  padding-left: 96px;
-  padding-right: 96px;
+}
+@media screen and (max-width: 545px) {
+  .small-section {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+@media screen and (min-width: 545px) {
+  .small-section {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
 }
 
 .hero-section {
@@ -74,6 +84,14 @@ section {
   height: 100%;
   width: 100%;
   max-width: 500px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media screen and (max-width: 545px) {
+  .hero-overlay .content h2{
+    font-size: 1.5rem;
+  }
 }
 
 .dark-logo {
@@ -82,7 +100,7 @@ section {
 }
 
 .phone {
-  max-width: 350px;
+  max-width: 315px;
 }
 
 .phone-top {
@@ -102,14 +120,25 @@ section {
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-left: 96px;
-  padding-right: 96px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   box-shadow: 0px -24px 100px 0px rgba(0,0,0,0.2);
   position: relative;
   z-index: 10;
+  padding-top: 48px;
+}
+@media screen and (max-width: 545px) {
+  .about-section {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+@media screen and (min-width: 545px) {
+  .about-section {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
 }
 .about-section .content {
   max-width: 550px;
@@ -128,22 +157,30 @@ section {
   z-index: 20;
   background: var(--off-black);
   display: flex;
-  flex-direction: row;
   min-height: 0px;
-  padding-bottom: 96px;
+}
+@media screen and (max-width: 545px) {
+  .bottom-about-section {
+    flex-direction: column-reverse;
+    padding-bottom: 500px;
+  }
+}
+@media screen and (min-width: 545px) {
+  .bottom-about-section {
+    flex-direction: row;
+    padding-bottom: 96px;
+  }
 }
 .bottom-about-section .content {
   max-width: 550px;
 }
 .section-left {
-  width: 50%;
   display: flex;
   justify-content: center;
   position: relative;
 }
 .section-left-overlay {
   position: absolute;
-  left: calc(100% / 2 - 175px);
   top: 50vh;
   transition: top 2s;
 }
@@ -152,14 +189,34 @@ section {
 }
 .section-right {
   padding-top: 32px;
-  padding-right: 96px;
-  width: 50%;
   display: flex;
   justify-content: flex-start;
   position: relative;
   right: -32px;
   opacity: 0;
   transition: all 1s;
+}
+@media screen and (max-width: 545px) {
+  .section-right {
+    padding-left: 48px;
+    padding-right: 48px;
+    width: 100%;
+  }
+  .section-left {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 545px) {
+  .section-right {
+    padding-right: 96px;
+    width: 50%;
+  }
+  .section-left {
+    width: 50%;
+  }
+  .section-left-overlay {
+    left: calc(100% / 2 - 175px);
+  }
 }
 .section-right.active {
   right: 0;

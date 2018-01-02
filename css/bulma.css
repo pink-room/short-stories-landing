@@ -4473,8 +4473,9 @@ a.box:active {
 .notification {
   background-color: whitesmoke;
   border-radius: 3px;
-  padding: 1.25rem 2.5rem 1.25rem 1.5rem;
+  padding: 1.25rem 5rem 1.25rem 1.5rem;
   position: relative;
+  box-sizing: border-box;
 }
 
 .notification:not(:last-child) {

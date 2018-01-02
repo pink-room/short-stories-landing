@@ -14,3 +14,14 @@ $( window ).scroll(function() {
     $("#about").addClass("active");
   }
 });
+
+function hide() {
+  $('#mce-error-response').css("display", "none");
+  $('#mce-success-response').css("display", "none");
+  $('#mce-error-response').html("");
+  $('#mce-success-response').html("");
+}
+function show() {
+  $('#mce-error-response').css("display", "block");
+  $('#mce-success-response').css("display", "block");
+}

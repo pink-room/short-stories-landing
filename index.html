@@ -136,21 +136,24 @@
           <input type="text" name="b_3eb790d37566fb91c3cc62115_ae19d89e81" tabindex="-1" value="">
         </div>
         <div class="clear">
-          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button is-dark" onclick="show()">
+          <input class="button is-dark" id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" onclick="show()">
         </div>
       </form>
     </section>
     <section class="small-section feedback-section">
       <h2 class="title is-2 bold">Author? Feedback</h2>
       <h3 class="subtitle is-4 thin">Really? Let’s get in touch!</h3>
-      <form>
+      <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbywVLois6resre9kNhcK9PeyxB13JEwk_mvL09VtuKEenUwabU/exec">
         <div class="inputs">
-          <input class="input" type="text" placeholder="Name">
-          <input class="input" type="text" placeholder="Email">
-          <textarea class="textarea" type="text" placeholder="Message"></textarea>
+          <input class="input" type="text" placeholder="Name" name="name" id="name">
+          <input class="input" type="text" placeholder="Email" name="email" id="email">
+          <textarea class="textarea" type="text" placeholder="Message" name="message" id="message"></textarea>
         </div>
-        <a class="button is-dark">Submit</a>
+        <input class="button is-dark" id="mc-embedded-subscribe" type="submit">
       </form>
+      <div style="display:none;" id="thankyou_message">
+        <h2><em>Thanks</em> for contacting us!</h2>
+      </div>
     </section>
     <footer class="small-section">
       <img src="images/phone-bottom.svg" class="phone phone-bottom" alt="">
@@ -167,5 +170,6 @@
     <script src="js/script.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/newsletter.js"></script>
+    <script src="js/feedback.js"></script>
   </body>
 </html>

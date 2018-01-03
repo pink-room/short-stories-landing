@@ -114,6 +114,7 @@ section {
 
 .about-section-large {
   background: var(--off-black);
+  overflow: hidden;
 }
 .about-section {
   background-image: url("../images/lady-dark.jpg");

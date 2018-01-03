@@ -1,17 +1,3 @@
-function validEmail(email) { // see:
-  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-  return re.test(email);
-}
-
-function validateHuman(honeypot) {
-  if (honeypot) {  //if hidden form filled up
-    console.log("Robot Detected!");
-    return true;
-  } else {
-    console.log("Welcome Human!");
-  }
-}
-
 // get all data in form and return object
 function getFormData() {
   var form = document.getElementById("gform");
@@ -68,8 +54,11 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   }
   */
 
+  // show messages fields
+  show();
+
   if( !validEmail(data.email) ) {   // if email is not valid show error
-    document.getElementById('email-invalid').style.display = 'block';
+    document.getElementById('mce-error-response').innerHTML = feedbackEmailErrorMessage;
     return false;
   } else {
     var url = event.target.action;  //
@@ -80,8 +69,8 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     xhr.onreadystatechange = function() {
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
-        document.getElementById('gform').style.display = 'none'; // hide form
-        document.getElementById('thankyou_message').style.display = 'block';
+        document.getElementById('gform').reset();
+        document.getElementById('mce-success-response').innerHTML = feedbackSuccessMessage;
         return;
     };
     // url encode form data for sending as post data
@@ -92,7 +81,6 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   }
 }
 function loaded() {
-  console.log('contact form submission handler loaded successfully');
   // bind to the submit event of our form
   var form = document.getElementById('gform');
   form.addEventListener("submit", handleFormSubmit, false);

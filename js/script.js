@@ -22,6 +22,7 @@ function hide() {
   $('#mce-success-response').html("");
 }
 function show() {
+  hide();
   $('#mce-error-response').css("display", "block");
   $('#mce-success-response').css("display", "block");
 }

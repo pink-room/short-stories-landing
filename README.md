@@ -8,7 +8,12 @@ After downloading, simply edit the HTML and CSS files included with the template
 
 ### Installing
 
-Clone the repo with `git clone https://github.com/pink-room/short-stories-landing.git`
+This assumes you already have Node.js installed on your machine.
+
+1. Clone the repo with `git clone https://github.com/pink-room/short-stories-landing.git`
+1. Run `npm install`.
+1. Run `npm start`.
+1. Open your browser on `http://localhost:8080`.
 
 ## Built With
 

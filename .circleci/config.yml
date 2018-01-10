@@ -45,4 +45,4 @@ workflows:
             - build-job
           filters:
             branches:
-              only: master
+              only: production

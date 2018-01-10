@@ -6,9 +6,9 @@ jobs:
     working_directory: /tmp/my-project
     steps:
       - run:
-	  name: Building assets
-	  run: echo "I'm doing nothing because LOL"
-            
+          name: Building assets
+          command: echo "I'm doing nothing because LOL"
+
   deploy-staging-job:
     docker:
       - image: circleci/node:latest

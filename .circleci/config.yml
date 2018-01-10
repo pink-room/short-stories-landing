@@ -3,7 +3,6 @@ jobs:
   build-job:
     docker:
       - image: circleci/node:latest
-    working_directory: /tmp/my-project
     steps:
       - run:
           name: Building assets
@@ -12,7 +11,6 @@ jobs:
   deploy-staging-job:
     docker:
       - image: circleci/node:latest
-    working_directory: /tmp/my-project  
     steps:
       - run:
           name: Deploying to Heroku
@@ -20,9 +18,11 @@ jobs:
 
   deploy-prod-job:
     docker:
-      - image: circleci/node:latest
-    working_directory: /tmp/my-project  
+      - image: circleci/python:3.6
     steps:
+      - run:
+          name: Install AWS CLI
+          command: pip install awscli
       - run:
           name: Deploying to S3 bucket
           command: aws s3 sync . $S3_PROD_BUCKET_URL --delete --recursive --exclude ".git/*"

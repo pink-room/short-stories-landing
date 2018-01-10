@@ -25,7 +25,7 @@ jobs:
           command: sudo pip install awscli
       - run:
           name: Deploying to S3 bucket
-          command: aws s3 sync . $S3_PROD_BUCKET_URL --delete --recursive --exclude ".git/*"
+          command: aws s3 sync . $S3_PROD_BUCKET_URL --delete --exclude ".git/*"
 
 workflows:
   version: 2

@@ -1,2 +1,48 @@
 version: 2
 jobs:
+  build-job:
+    docker:
+      - image: circleci/node:latest
+    working_directory: /tmp/my-project
+    steps:
+      - run:
+	  name: Building assets
+	  run: echo "I'm doing nothing because LOL"
+            
+  deploy-staging-job:
+    docker:
+      - image: circleci/node:latest
+    working_directory: /tmp/my-project  
+    steps:
+      - run:
+          name: Deploying to Heroku
+          command: echo "I'm deploying to Heroku"
+
+  deploy-prod-job:
+    docker:
+      - image: circleci/node:latest
+    working_directory: /tmp/my-project  
+    steps:
+      - run:
+          name: Deploying to S3 bucket
+          command: echo "I'm deploying to S3"
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build-job
+
+      - deploy-staging-job:
+          requires:
+            - build-job
+          filters:
+            branches:
+              only: staging
+
+      - deploy-prod-job:
+          requires:
+            - build-job
+          filters:
+            branches:
+              only: master

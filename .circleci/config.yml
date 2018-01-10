@@ -22,7 +22,7 @@ jobs:
     steps:
       - run:
           name: Install AWS CLI
-          command: pip install awscli
+          command: sudo pip install awscli
       - run:
           name: Deploying to S3 bucket
           command: aws s3 sync . $S3_PROD_BUCKET_URL --delete --recursive --exclude ".git/*"

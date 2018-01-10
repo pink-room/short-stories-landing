@@ -4,6 +4,7 @@ jobs:
     docker:
       - image: circleci/node:latest
     steps:
+      - checkout
       - run:
           name: Building assets
           command: echo "I'm doing nothing because LOL"

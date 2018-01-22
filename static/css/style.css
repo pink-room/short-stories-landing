@@ -105,11 +105,26 @@ section {
 
 .phone-top {
   position: relative;
+
+}
+.phone-top:hover {
+
+}
+.playstore-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: -15px;
   transition: bottom 0.5s;
 }
-.phone-top:hover {
+.playstore-link:hover {
   bottom: -6px;
+}
+.become-tester {
+  position: absolute;
+  width: 200px;
+  margin-top: 24px;
 }
 
 .about-section-large {

@@ -122,9 +122,15 @@ section {
   bottom: -6px;
 }
 .become-tester {
-  position: absolute;
-  width: 200px;
+  position: absolute !important;
   margin-top: 24px;
+  z-index: 100;
+  margin-left: -4px;
+  background: var(--green-forest) !important;
+  transition: background-color 0.2s;
+}
+.become-tester:hover {
+  background: #46c177 !important;
 }
 
 .about-section-large {
